@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css"/>
+    </head>
+    <body>
+      
+        <img id="FBsound-img" onclick="FBsound_play()" onmouseover="FBsound_stop()" src="unMuted.jpg"/>
+        <br>
+        <audio id="FBsound" src="football-song.mp3"  >  </audio>
+       
+       
+<!-- --------------------------------Goal------------------------------ -->
+<img src="goal.png" id="goal" > 
+
+<div id="status"></div>
+<!-- ---------------------------------Ball--------------------- -->
+<img id="arrow-up" src="arrow.png" alt="arrow-up" onclick="moveUp()">
+<img id="arrow-ground" src="arrow.png" alt="arrow-ground" onclick="move()">
+<img id="arrow-down" src="arrow.png" alt="arrow-down" onclick="moveDown()">
+<img  id="ball"  src="ball.png">
+
+<!------------------------------------Player------------------------>
+<div id="player" onclick="move()">
+    <div  class="body">
+        <div class="hair">
+            <div class="hair-right"></div>
+            <div class="hear"></div>
+        </div>
+        <div class="head"></div>
+        <div class="main">
+            <div class="arm-left"></div>
+            <div class="arm-right"></div>
+    </div>
+    <div class="bottom"></div>
+    <ul>
+        <li id="toKick" onmouseleave="notify()" onmouseover="notify()">
+            <div class="leg"></div>
+            <div class="socks"></div>
+            <div  class="shoes"></div>
+        </li>
+        <li class="right">
+            <div class="leg"></div>
+            <div class="socks"></div>
+            <div class="shoes"></div>
+        </li>
+    </ul>
+    </div>
+
+</div>
+
+
+
+
+<script src="play.js"></script>
+    </body>
+</html>

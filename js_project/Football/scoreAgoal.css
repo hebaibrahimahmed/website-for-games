@@ -1,0 +1,29 @@
+body{
+    background-image:url(ground.jpg);
+}
+img{
+    position: relative;
+    left: 350px;
+    float: left;
+}
+#choices{
+    position: relative;
+    top: 200px;
+    font-style: oblique;
+    font-weight: bold;
+    color: greenyellow;
+    left: 100px;
+    width: 50%;
+    height: 50%;
+
+}
+#newGame ,#Setting,#exit{
+    font-size:large;
+    position:fixed;
+    transition: 1s;
+    display: inline;
+    padding: 20px;
+}
+#newGame:hover,#Setting:hover,#exit:hover{
+    font-size:xx-large;
+}

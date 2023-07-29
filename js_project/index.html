@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background-color: rgb(200, 173, 148);
+        }
+        .box{
+          position: relative;
+          width: 300px;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          background: #060c21;
+          transition: 0.5s;
+        }
+        .box:hover{
+            height: 400px;
+        }
+        .box .imgBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box .imgBox img{
+            max-width: 100%;
+            opacity: 0.1;
+            transition: 0.5s;
+        }
+        .box:hover .imgBox img
+        {
+           opacity: 1; 
+        }
+        .box:before{
+             content:'';
+             position: absolute;
+             top: -2px;
+             left:-2px;
+             right: -2px;
+             bottom: -2px;
+             background: #fff;
+             z-index: -1;
+        }
+        .box:after{
+             content:'';
+             position: absolute;
+             top: -2px;
+             left:-2px;
+             right: -2px;
+             bottom: -2px;
+             background: #fff;
+             z-index: -1;
+             filter: blur(40px);
+        }
+        .box:before,
+        .box:after{
+            background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+        }
+
+        .box:nth-child(1):before,
+        .box:nth-child(1){
+            background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+        }
+        .box:nth-child(2):before,
+        .box:nth-child(2){
+            background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+        }
+
+        .box:nth-child(3):before,
+        .box:nth-child(3){
+            background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+        }
+        .box:nth-child(4):before,
+        .box:nth-child(4){
+            background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+        }
+        .box .content
+        {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            height: 90px;
+            background: rgba(0,0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .box:hover .content{
+            opacity: 1;
+        }
+        .box .content h2{
+            font-size: 20px;
+            color:#fff;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+        .box .content h2 span{
+            font-size: 14px;
+            color:#fff;
+            font-weight: 200;
+            line-height: 2px;
+            letter-spacing: 1px;
+        }
+    </style
+</head>
+<body>
+    <div class="box">
+        <div class="imgBox">
+           <a href="backGround.html"><img src="ouroboros.png"></a>
+        </div> 
+        <div class="content">
+                <h2>Nada Soliman<br><span>Snake Game</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBox">
+         <a href="Memorygame.html"><img  src="images/7Q8StN.gif" style="height: 60%; align-items: center;">
+        </div> 
+        <div class="content">
+                <h2>Heba Ibrahim<br><span>Memory Game</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBox">
+        <a href="https://noramohammed33.github.io/Game_with_js/"> <img src="images/bike-jump.gif">
+        </div>
+        <div class="content">
+            <h2>Nora Mohammed<br><span>Jump Game</span></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBox">
+            <a href="Football/scoreAgoal.html"><img src="Football/football.gif"/></a>
+        </div> 
+        <div class="content">
+                <h2>Gehad<br><span>scoreAgoal</span></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBox">
+            <a href="2048Game.html"><img src="images.png" style="width: 90%; align-items: center;"/></a>
+        </div> 
+        <div class="content">
+                <h2>Mayar<br><span>2048_Game</span></h2>
+        </div>
+    </div>
+
+</body>
+</html>

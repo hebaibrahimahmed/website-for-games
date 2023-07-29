@@ -1,0 +1,28 @@
+{
+   "manifest_version":3,
+   "name": "Block YouTube Ads",
+    "version": "1.0",
+    "description":"this extensyion to block the comment in YouTube",
+    
+ 
+    "content_scripts":[
+        {
+            "js":["index.js"],
+            "run_at": "document_idle",
+            "matches": ["https://*.youtube.com/*"]
+            
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16":"images/pic16.png",
+        "48":"images/pic48.png",
+        "128": "images/pic128.png"
+    }
+}

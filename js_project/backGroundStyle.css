@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(79, 79, 79);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+section .row{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+}
+i{
+    color:rgb(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+}
+i:hover
+{
+    transition: 0s;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
+
+section .row div
+{
+    animation: animateOne 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row div:nth-child(2)
+{
+    animation: animateTwo 80s linear infinite;
+    animation-delay: -40s;
+}
+@keyframes animateOne
+{
+    0%
+    {
+        transform: translate(100%);
+    }
+    100%
+    {
+       transform: translate(-100%); 
+    }
+}
+@keyframes animateTwo
+{
+    0%
+    {
+        transform: translate(0%);
+    }
+    100%
+    {
+       transform: translate(-200%); 
+    }
+}
+
+
+section .row:nth-child(even) div
+{
+    animation: animateThree 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row:nth-child(even) div:nth-child(2)
+{
+    animation: animateFour 80s linear infinite;
+    animation-delay: -40s;
+}
+@keyframes animateThree
+{
+    0%
+    {
+        transform: translate(-100%);
+    }
+    100%
+    {
+       transform: translate(100%); 
+    }
+}
+@keyframes animateFour
+{
+    0%
+    {
+        transform: translate(-200%);
+    }
+    100%
+    {
+       transform: translate(0%); 
+    }
+}
+/* ---------------------------------------------------------------- */
+#myButton{
+width: 300px;
+position: absolute;
+top: 360px;
+height: 50px;
+left: 560px;
+font-size: large;
+font-family:my font, Georgia, Times, 'Times New Roman', serif;
+font-stretch: expanded;
+color: rgb(15, 180, 15);
+border-color: rgb(15, 180, 15);
+border-radius: 10%;
+border-style: double;
+}
+#myButton:hover {
+    color: #111;
+    background: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+}
+@font-face {
+    font-family: 'my font';
+    src: url("Mina-Bold.ttf");
+}
+#spanOne{
+width: 320px;
+position: absolute;
+top: 300px;
+height: 50px;
+left: 560px;
+font-family:my font;
+font-size: large;
+color: aliceblue;
+}
+input{
+background-color: #abf79d;
+}
+#myButtonTwo
+{
+    width: 80px;
+    height: 30px;
+}
+

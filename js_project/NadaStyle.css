@@ -1,0 +1,93 @@
+#gameContainer
+{
+    text-align: center;
+   
+}
+#gameBoard
+{
+    border: 3px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(3, 187, 46, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+   }
+#scoreText
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    color: #293127;
+    stroke: #39ff14;
+}
+#resetBtn
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+#resetBtn:hover{
+   
+    color: #111;
+    background: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+}
+body{
+    min-height: 90vh;
+    
+}
+/* ============background style======= */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #0c192c;
+}
+.gameContainer{
+    position: relative;
+    width: 700px;
+    height: 800%;
+    overflow: hidden;
+  
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animateOne 15s linear infinite;
+    animation-duration: calc(125s / var(--i)) ;
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animateOne
+{
+   0%
+   {
+    transform: translateY(100vh) scale(0);
+   } 
+   100%
+   {
+    transform: translateY(-10vh) scale(1);
+   }
+} */
